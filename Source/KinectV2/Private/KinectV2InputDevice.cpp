@@ -4,13 +4,13 @@
 // 
 //------------------------------------------------------------------------------
 
-#include "IKinectV2PluginPCH.h"
 #include "KinectV2InputDevice.h"
+#include "IKinectV2PluginPCH.h"
 //#include "KinectListener.h"
 #include "KinectSensor.h"
-#include "AllowWindowsPlatformTypes.h"
+#include "Windows\AllowWindowsPlatformTypes.h"
 #include <WinUser.h>
-#include "HideWindowsPlatformTypes.h"
+#include "Windows\HideWindowsPlatformTypes.h"
 //TArray<FKinectListenerObject*> FKinectListenerObject::KinectListenersObjects;
 
 #define LOCTEXT_NAMESPACE "KinectV2InputDevice"

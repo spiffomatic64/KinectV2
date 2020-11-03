@@ -1,10 +1,10 @@
-
+#include "KinectEventManager.h"
 #include "IKinectV2PluginPCH.h"
 
 #include "SlateBasics.h"
 
 #include "KinectV2InputDevice.h"
-#include "AllowWindowsPlatformTypes.h"
+#include "windows\AllowWindowsPlatformTypes.h"
 #include <windows.h>
 #include <winuser.h>
 
@@ -98,4 +98,4 @@ void UKinectEventManager::EnableMouseControl(bool MouseControl)
 	ControlMouse = MouseControl;
 }
 
-#include "HideWindowsPlatformTypes.h"
+#include "Windows\HideWindowsPlatformTypes.h"

@@ -7,7 +7,7 @@
 #pragma warning(disable:4653)
 #pragma once
 
-#include "ModuleManager.h"
+#include "Modules\ModuleManager.h"
 #include "IInputDeviceModule.h"
 
 #ifdef _UNICODE

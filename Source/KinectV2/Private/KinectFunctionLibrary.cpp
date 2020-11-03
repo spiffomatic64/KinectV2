@@ -4,12 +4,13 @@
 // 
 //------------------------------------------------------------------------------
 
+#include "KinectFunctionLibrary.h"
 #include "IKinectV2PluginPCH.h"
 #include "KinectV2Classes.h"
 #include "KinectV2InputDevice.h"
 
 #include "Kinect.h"
-#include "COMPointer.h"
+#include "Windows\COMPointer.h"
 
 #define NumOfKinectBones 25
 

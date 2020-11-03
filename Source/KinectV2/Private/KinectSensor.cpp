@@ -4,10 +4,10 @@
 // 
 //------------------------------------------------------------------------------
 
+#include "KinectSensor.h"
 #include "IKinectV2PluginPCH.h"
 #include "ImageUtils.h"
-#include "KinectSensor.h"
-#include "AllowWindowsPlatformTypes.h"
+#include "Windows\AllowWindowsPlatformTypes.h"
 
 #define BODY_WAIT_OBJECT WAIT_OBJECT_0
 #define COLOR_WAIT_OBJECT WAIT_OBJECT_0 + 1
@@ -197,7 +197,7 @@ uint32 FKinectSensor::Run(){
 	return 0;
 }
 
-#include "HideWindowsPlatformTypes.h"
+#include "Windows\HideWindowsPlatformTypes.h"
 
 FKinectSensor::FKinectSensor() : bStop(true),
 m_pKinectSensor(nullptr),

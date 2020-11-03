@@ -40,9 +40,9 @@ namespace UnrealBuildTool.Rules
                     "InputDevice",
                     //"MSSpeech",
                     "InputCore",
-                     "K4WLib",
-                     //"AnimGraphRuntime", "UnrealEd", "KismetWidgets", "KismetCompiler", "BlueprintGraph", "GraphEditor", "Kismet"
-                   // "Slate"
+                    "K4WLib",
+                    //"AnimGraphRuntime", "UnrealEd", "KismetWidgets", "KismetCompiler", "BlueprintGraph", "GraphEditor", "Kismet"
+                    // "Slate"
 					// ... add other public dependencies that you statically link with here ...
                     //"Core", "CoreUObject", "InputCore", "Slate", "Engine", "AssetTools", "UnrealEd", // for FAssetEditorManager "KismetWidgets", "KismetCompiler", "BlueprintGraph", "GraphEditor", "Kismet", // for FWorkflowCentricApplication "PropertyEditor", "EditorStyle", "Slate", "SlateCore", "Sequencer", "DetailCustomizations", "Settings", "RenderCore",
 				}
@@ -63,16 +63,8 @@ namespace UnrealBuildTool.Rules
 
 
 
-            AddThirdPartyPrivateStaticDependencies(Target, "K4WLib");
-
-            if (UEBuildConfiguration.bBuildEditor == true)
-            {
-                //@TODO: Needed for the triangulation code used for sprites (but only in editor mode)
-                //@TOOD: Try to move the code dependent on the triangulation code to the editor-only module
-              //  PrivateDependencyModuleNames.AddRange(new string [] {"UnrealEd","ContentBrowser"});
-            }
-
-
+            //AddThirdPartyPrivateStaticDependencies(Target, "K4WLib");
+			AddEngineThirdPartyPrivateStaticDependencies(Target, new string[]{"K4WLib"});
         }
     }
 }

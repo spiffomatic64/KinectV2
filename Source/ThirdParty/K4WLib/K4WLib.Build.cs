@@ -26,8 +26,9 @@ public class K4WLib : ModuleRules
 
             string LibPath = SDKDIR + "Lib/" + PlatformPath;
 
-            PublicLibraryPaths.Add(LibPath);
-            PublicAdditionalLibraries.AddRange(new string[] { "Kinect20.lib", /*"Kinect20.face.lib" */});
+            //PublicLibraryPaths.Add(LibPath);
+            //PublicAdditionalLibraries.AddRange(new string[] { "Kinect20.lib", /*"Kinect20.face.lib" */});
+			PublicAdditionalLibraries.Add(Path.Combine(LibPath, "Kinect20.lib"));
 
             PublicDelayLoadDLLs.AddRange(new string[] { /*"Kinect20.Face.dll",*/ "Kinect20.dll",  /*"Microsoft.Kinect.Face.dll", /*vgbtechs/AdaBoostTech.dll", "vgbtechs/RFRProgressTech.dll" */});
 

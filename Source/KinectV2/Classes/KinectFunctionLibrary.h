@@ -8,9 +8,9 @@
 #include "CoreUObject.h"
 #include "Engine.h"
 #include "Engine/EngineTypes.h"
-#include "AllowWindowsPlatformTypes.h"
+#include "Windows/AllowWindowsPlatformTypes.h"
 #include "Kinect.h"
-#include "HideWindowsPlatformTypes.h"
+#include "Windows/HideWindowsPlatformTypes.h"
 #include "BoneOrientationDoubleExponentialFilter.h"
 #include "KinectFunctionLibrary.generated.h"
 

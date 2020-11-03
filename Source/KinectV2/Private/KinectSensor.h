@@ -6,11 +6,11 @@
 #pragma once
 #include "Core.h"
 #include "KinectFunctionLibrary.h"
-#include "AllowWindowsPlatformTypes.h"
+#include "Windows\AllowWindowsPlatformTypes.h"
 #include "Kinect.h"
 #include "Kinect.Face.h"
 
-#include "COMPointer.h"
+#include "Windows\COMPointer.h"
 
 /**********************************************************************************************//**
  * A kinect sensor.
@@ -372,4 +372,4 @@ private:
 
 };
 
-#include "HideWindowsPlatformTypes.h"
+#include "Windows\HideWindowsPlatformTypes.h"

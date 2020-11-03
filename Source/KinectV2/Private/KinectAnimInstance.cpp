@@ -1,7 +1,5 @@
-
-#include "IKinectV2PluginPCH.h"
-
 #include "KinectAnimInstance.h"
+#include "IKinectV2PluginPCH.h"
 #include "AnimationRuntime.h"
 #include "AnimationUtils.h"
 
